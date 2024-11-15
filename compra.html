@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/compra.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>AeroNova</title>
+</head>
+<body>
+    <section class="main-banner">
+        <header>
+                <img src="./img/Logo.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <a href="index.html"><li>HOME</li></a>
+                    <li>DESTINOS</li>
+                    <li>CONOCENOS</li>
+                    <li>AYUDA</li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="compra-panel">
+                <h1>DATOS PERSONALES</h1>
+
+            <form action="" class="datos-panel" autocomplete="off">
+              
+              <input type="text" id="DNI" placeholder="DNI" required>
+              <input type="text" id="name" placeholder="Nombre" required>
+              <input type="text" id="lastname" placeholder="Apellido" required>
+              <input type="text" id="mail" placeholder="Correo electronico" required>
+              <button type="button" id="btnConfirm">CONFRIMAR</button>
+            </form>
+        </section>
+
+    </section>
+
+    <script type="module" src="/src/supabase.js"></script>
+    <script type="module" src="/js/datos.js"></script>
+    <script src="/js/codigo.js"></script>
+    <script src="/js/result.js"></script>
+    <script type="module" src="/js/registrar.js"></script>
+</body> 
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>AeroNova</title>
+</head>
+<body>
+    
+    <section class="main-banner">
+        <header>
+                <img src="./img/Logo.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li>HOME</li>
+                    <li>DESTINOS</li>
+                    <li>CONOCENOS</li>
+                    <li>AYUDA</li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <main>
+        <section class="search-panel">
+            <ul>
+                <li id="search">Buscar vuelos</li>
+                <li id="reserva">Mi reserva</li>
+            </ul>
+
+            <form class="form">
+                <section id="form-search" class="form-search">
+                    <select name="" id="origen-ciudad">
+                        <option disabled selected value="" >Origen</option>
+                    </select>
+                    <select name="" id="destino-ciudad">
+                        <option disabled value="">Destino</option>
+                    </select>
+                    <input type="date" class="date">
+                    <button id="button">Buscar</button>
+                </section>
+    
+                <section id="form-reserva" class="form-reserva">
+                    <input class="code" placeholder="Codigo">
+                    <input class="lastname" placeholder="DNI">
+                    <button id="button2">Buscar</button>
+                </section>
+            </form>
+
+            <section class="vueloResult">
+                <table id="tabla">
+                    <thead>
+                        <tr>
+                            <th>Origen</th>
+                            <th>Destino</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Disponibles</th>
+                        </tr>
+                    </thead>
+                    <tbody class="result-panel">                        
+                        
+                    </tbody>    
+                </table>
+                <p id="msg">No se encontraron vuelos</p>
+        </section>
+           
+        </section>
+
+    </main>
+
+  
+    <footer>
+        <span>&copy; AeroNova. Copyright</span>
+    </footer>
+
+    <script type="module" src="/src/supabase.js"></script>
+    <script type="module" src="/js/datos.js"></script>
+    <script src="./js/codigo.js"></script>
+</body> 
+</html>
